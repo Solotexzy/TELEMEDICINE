@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Telemedicine Application</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Telemedicine Application</h1>
+	</header>
+    
+    <nav>
+        <ul>
+            <li><a href="#login">Login</a></li>
+            <li><a href="#appointments">Appointments</a></li>
+	    <li><a href="#about">About us</a></li>
+        </ul>
+    </nav>
+    
+    <div class="container" id="login">
+        <div class="login-form">
+            <h2>Patient Login</h2>
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username">
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password">
+            </div>
+            <div class="form-group">
+                <button type="button" onclick="login()">Login</button>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container" id="appointments">
+        <div class="appointment-form">
+            <h2>Book an Appointment</h2>
+            <div class="form-group">
+                <label for="doctor">Choose Doctor</label>
+                <select id="doctor" name="doctor">
+                    <option value="dr_smith">Dr. Smith</option>
+                    <option value="dr_jones">Dr. Jones</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="date">Date</label>
+                <input type="date" id="date" name="date">
+            </div>
+            <div class="form-group">
+                <label for="time">Time</label>
+                <input type="time" id="time" name="time">
+            </div>
+            <div class="form-group">
+                <button type="button" onclick="bookAppointment()">Book Appointment</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2025 Telemedicine App. All rights reserved.</p>
+<a target="_blank" href="About/About.html" id="#about">About us</a>     
+</footer>
+
+    <script>
+        function login() {
+            alert('Login function is not yet implemented.');
+        }
+
+        function bookAppointment() {
+            alert('Appointment booking function is not yet implemented.');
+        }
+    </script>
+</body>
+</html>
